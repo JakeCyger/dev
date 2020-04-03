@@ -151,34 +151,78 @@ background-image: linear-gradient(243deg, #00DBDE 0%, #FC00FF 100%);
     .box2 {
         padding-top: 50px;
     }
+        .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: black;
+        overflow-x: hidden;
+        transition: 1s;
+        padding-top: 0px;
+}
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+}
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+}
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+}
 </style>
 <html>
 <script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "25%";
+}
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0px";
+}
 </script>
 <body class="box">
 <header id="navbar">
         <h1 class="" style="font-family: Sen; color: black;">Development</h1>
             <nav>
                 <ul class="links">
-                    <li><a href="javascript:void(0)" onclick="openModal()">Damage</a></li>
-                    <li><a href="javascript:void(0)" onclick="openModal()">Abilities</a></li>
-                    <li><a href="javascript:void(0)" onclick="openModal()">Ults</a></li>
-                    <li><a href="javascript:void(0)" onclick="openNav()">Mains</a></li>
+                    <li><a href="javascript:void(0)" onclick="snack()">About Me</a></li>
+                    <li><a href="javascript:void(0)" onclick="scroll()">Languages</a></li>
+                    <li><a href="javascript:void(0)" onclick="openNav()">Projects</a></li>
                 </ul>
             </nav>
     </header>
-    <img src="https://www.designyourway.net/blog/wp-content/uploads/2018/11/pastel-background-goo-1250x834.jpg">
-<center><h1 class="box2" style="font-family: Lato; font-size: 50px; color: black">Jake's Programming Site</h1></center><br>
-<center><h2 style="color: black; font-family: Lato;" class="border2">Languages include: HTML, JavaScript, and CSS.</h2></center><br>
-<center><p style="color: black; font-family: Lato; font-size: 20px">I have set out to create a project everyday! I enjoy learning and coding so of couse I love learning to code! Since I got a huge break from school because of the Coronavirus, I have had ALOT more free time to work on this project. So far it has pretty much just been fun.</p><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><center><h1 style="font-family: Lato; font-size: 110px">Projects</h1></center><br><br><br><br><br><br><br><br><br><center><a href="/iframe.html" class="button button2 border" style="color: white;">iFrame. <br> Experiment: 1</a></center>
+    <div id="mySidenav" class="sidenav">
+    <button type="button" style="width: 50px; height: 50px; background: black; color: white; border: none; outline: none; float: right;" onclick="closeNav()">Close</button>
+    <center><br><br><br><h1 style="color: white">Projects</h1>
+    
+    
+    </center>
+</div>
+<center><h1 class="box2" style="font-family: Lato; font-size: 50px; color: black">Jake Cyger</h1></center><br>
+<center><h2 style="color: black; font-family: Lato;" class="border2">Video Gamer, Coder, Student, Reader.</h2></center><br>
+<center><p style="color: black; font-family: Lato; font-size: 20px">This is my website. I have created it and here you can see some of my projects, learn more about me and read what I say. :)</p><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><!--<center><h1 style="font-family: Lato; font-size: 110px">Projects</h1></center><br><br><br><br><br><br><br><br><br><center><a href="/iframe.html" class="button button2 border" style="color: white;">iFrame. <br> Experiment: 1</a></center>
 <center><a href="/showtext.html" class="button button2 border" style="color: black;">Show Text. <br> Experiment: 2</a></center>
 <center><a href="/button.html" class="button button2 border" style="color: black;">Show and Not. <br> Experiment: 3</a></center>
 <center><a href="/codebox.html" class="button button2 border" style="color: black;">Code Box. <br> Experiment: 4</a></center>
 <center><a href="/animation.html" class="button button2 border" style="color: black;">Animations. <br> Experiment: 5</a></center>
 <center><a href="/countdown.html" class="button button2 border" style="color: black;">Countdown. <br> Experiment: 6</a></center>
 <center><a href="/night.html" class="button button2 border" style="color: black;">Dark Mode. <br> Experiment: 7</a></center>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><center><p style="font-family: Raleway; font-size: 55; color: white;" class="box">Projects Successfully Completed: 7.</p></center>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><center><p style="font-family: Raleway; font-size: 55; color: white;" class="box">Projects Successfully Completed: 7.</p></center>-->
 <nav>
 </nav>
 </body>
