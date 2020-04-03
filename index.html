@@ -1,24 +1,76 @@
 <!DOCTYPE html>
 <link href="https://fonts.googleapis.com/css?family=Inter|Raleway|Lato&display=swap" rel="stylesheet">
 <style>
-    /* nav {
-        height: 10vh;
-        background: deepskyblue;
+<!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
+<style>
+    .container {
+        width: 80%;
+        margin: 0 auto;
     }
-    .nav-links {
+    nav {
+        float: right;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        position: sticky;
+        top: 0;
+        
+        justify-content: space-between;
         display: flex;
-        list-style: none;
-        justify-content: space-around;
         align-items: center;
-        width: 50%;
-        height: 100%;
-        margin-left: auto;
+        padding: 10px 10%;
+        -webkit-box-shadow: 0 8px 6px -6px #999;
+        -moz-box-shadow: 0 8px 6px -6px #999;
+         box-shadow: 0 8px 6px -6px #999;
+         height: 85px;
+         background-color: white;
     }
-    .nav-links li a{
-        color: white;
-        text-decoration: none;
-        font-size: 16px;
+    .logo {
+        cursor: pointer;
+    }
+    /* .links {
+        list-style: none;
+        font-family: Sen;
+        background-color: white;
+        border-width: 5px;
+        border-radius: 1px;
+        border-color: green;
     } */
+    a:link, a:visited {
+        background-color: white;
+        color: black;
+        padding: 10px 21px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-width: 2px;
+        border-radius: 10px;
+        border-color: #2ec931;
+        border-style: solid;
+        font-family: Sen;
+        
+}
+
+    a:hover, a:active {
+        background-color: #2ec931;
+}
+    .links li {
+        display: inline-block;
+        padding: 0px 15px;
+    }
+    .links li a {
+        transition: all 0.3s ease 0s;
+    }
+    .links li a:hover {
+        color: white;
+    }
+    .zindex {
+        z-index: -1;
+    }
     .button {
         background-color: deepskyblue;
         border: none;
