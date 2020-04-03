@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<style>
+    .border {
+        border-color: lightskyblue;
+        border-width: 5px;
+        border-style: solid;
+        border-radius: 10px;
+    }
+    .button-color {
+        background-color: lightskyblue;
+        border: none;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+    .thinner {
+        border-color: black;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 10px;
+    }
+    input[type=text], select {
+        width: 25%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-family: Raleway;
+}
+    .box {
+        background: lightskyblue;
+        padding: 20px;
+    }
+    .button {
+        background-color: lightskyblue;
+        border: none;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        width: 50%;
+        box-shadow: 1.5px 1.5px;
+    }
+     .thinner2 {
+        border-color: black;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 20px;
+</style
+<body>
+<!-- standard header here -->
+<a href="/" class="border button-color thinner">Home</a>
+<!-- standard header here -->
+<center><button id="button" onclick="show(this)" class="border button thinner2">Show</button></center>
+<center><button id="button2" onclick="hide(this)" class="border button thinner2">Hide</button></center><br>
+<center><img id="img" class="border" src=" " width="450"/></center>
+<script>
+    function hide(x) {
+        document.getElementById("img").src="  "
+    }
+    function show(x) {
+        document.getElementById("img").src="https://media.giphy.com/media/i44HqP9iP4PzG/giphy.gif"
+    }
+</script>    
+    
+</body>
+</html>

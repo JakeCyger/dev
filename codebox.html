@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css?family=Inter|Oswald|Raleway|Source+Sans+Pro&display=swap" rel="stylesheet">
+<html>
+<style>
+    .border {
+        border-color: lightskyblue;
+        border-width: 5px;
+        border-style: solid;
+        border-radius: 10px;
+    }
+    .button-color {
+        background-color: lightskyblue;
+        border: none;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+    .thinner {
+        border-color: black;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 10px;
+    }
+    input[type=text], select {
+        width: 48%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-family: Raleway;
+        height: 100%;
+        
+}
+    .box {
+        .box-shadow: 1.5px 1.5px;
+        background-color: lightskyblue;
+    }
+    #content {
+        float: left ;
+        width: 48% ;
+}
+    #navbar {
+        float: right ;
+        width: 48% ;
+}
+    .colorchange {
+        -webkit-animation:colorchange 20s infinite
+    body {
+        background-color: #FEE140;
+background-image: linear-gradient(45deg, #FEE140 0%, #FA709A 100%);
+
+    }
+</style
+<body>
+<!-- standard header here -->
+<a href="/" class="border button-color thinner">Home</a><br>
+<!-- standard header here -->
+<center><button class="border thinner button-color" onclick="myFunction()">Run >></button></center>
+<!-- Text Box -->
+<div id="container">
+<div id="content">
+      <form action="//www.html.am/html-codes/textboxes/submitted.cfm">
+                <textarea id="myText" name="myTextBox" cols="95" rows="32" style="resize: none; font-family: Monospace" value="">
+                </textarea>
+            <br/>
+        </form>
+</div>
+</div>
+
+<!-- Code Display Area -->
+<div id="container">
+<div id="navbar">
+        <h1 id="demo" style="font-family: SourceSansPro; font-size: 20px;" width="48%"></h1>
+</div>
+</div>
+<!-- Functions Below -->
+<script>
+function myFunction() {
+  var x = document.getElementById("myText").value;
+  document.getElementById("demo").innerHTML = x;
+
+}
+</script>
+
+</body>
+</html>

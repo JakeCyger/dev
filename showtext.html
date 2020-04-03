@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css?family=Inter|Raleway&display=swap" rel="stylesheet">
+<html>
+<style>
+    body {
+        background-color: #FEE140;
+background-image: linear-gradient(45deg, #FEE140 0%, #FA709A 100%);
+
+    }
+    .border {
+        border-color: lightskyblue;
+        border-width: 5px;
+        border-style: solid;
+        border-radius: 10px;
+    }
+    .button-color {
+        background-color: lightskyblue;
+        border: none;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+    .thinner {
+        border-color: black;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 10px;
+    }
+    input[type=text], select {
+        width: 25%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-family: Raleway;
+}
+    .box {
+        .background: lightskyblue;
+        .padding: 20px;
+    }
+</style
+<body>
+<!-- standard header here -->
+<a href="/" class="border button-color thinner">Home</a>
+<!-- standard header here -->
+<center><input type="text" id="myText" value=""></center> <br>
+
+<center><button class="border thinner button-color" onclick="myFunction()">Show Text</button></center>
+
+<center><h1  class="box" id="demo" style="font-family: Inter; font-size: 100px;"></h1></center>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myText").value;
+  document.getElementById("demo").innerHTML = x;
+
+}
+</script>
+
+</body>
+</html>

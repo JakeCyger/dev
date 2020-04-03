@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<style>
+    body {
+        background-color: #FEE140;
+background-image: linear-gradient(45deg, #FEE140 0%, #FA709A 100%);
+
+    }
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .border {
+        border-color: lightskyblue;
+        border-width: 5px;
+        border-style: solid;
+        border-radius: 10px;
+    }
+    .button-color {
+        background-color: lightskyblue;
+        border: none;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        box-shadow: 1.5px 1.5px;
+    }
+    .padding {
+        padding-top: 240px;
+    }
+    input[type=text], select {
+        width: 25%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-family: Raleway;
+}
+    .button-color:hover {
+        background-color: lightskyblue;
+        border: none;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        box-shadow: none;
+    }
+    .box {
+        width: 100%;
+        height: 100%;
+        background-color: #333;
+        transition-duration: 2s;
+    }
+</style>
+<script>
+function hi() {
+    var firstName = "";
+    firstName = document.getElementById("Name").value;
+    // document.getElementById("Name").value = "Well hello there, " + firstName + "."
+    document.getElementById("tester").innerHTML = "Well hello there, " + firstName + ".";
+    document.getElementById("Name").value = "";
+}
+</script>
+<body>
+<!-- standard header here -->
+<a href="/" class="border button-color thinner">Home</a>
+<!-- standard header here -->
+<div class="padding">
+     <center><h1 id="tester">Name:</h1>
+     <input type="text" id="Name"><br>
+     <button type="button" class="border button-color" onClick="hi()">Hello...</button></center>
+</div>
+<br><br><br><div class="padding">
+    
+</div>
+</body>

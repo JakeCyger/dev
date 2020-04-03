@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
+<style>
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+    nav {
+        float: right;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        position: sticky;
+        top: 0;
+        
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        padding: 10px 10%;
+        -webkit-box-shadow: 0 8px 6px -6px #999;
+        -moz-box-shadow: 0 8px 6px -6px #999;
+         box-shadow: 0 8px 6px -6px #999;
+         height: 85px;
+         background-color: white;
+    }
+    .logo {
+        cursor: pointer;
+    }
+    /* .links {
+        list-style: none;
+        font-family: Sen;
+        background-color: white;
+        border-width: 5px;
+        border-radius: 1px;
+        border-color: green;
+    } */
+    a:link, a:visited {
+        background-color: white;
+        color: black;
+        padding: 10px 21px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-width: 2px;
+        border-radius: 10px;
+        border-color: #2ec931;
+        border-style: solid;
+        font-family: Sen;
+        
+}
+
+    a:hover, a:active {
+        background-color: #2ec931;
+}
+    .links li {
+        display: inline-block;
+        padding: 0px 15px;
+    }
+    .links li a {
+        transition: all 0.3s ease 0s;
+    }
+    .links li a:hover {
+        color: white;
+    }
+    .zindex {
+        z-index: -1;
+    }
+    /* .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+} */
+    /* .sidenav {
+         transition: all 100s ease 0s;
+    } */
+    .button {
+        float: right;
+        width: 50px;
+        height: 50px;
+        border-width: 0px;
+        border-style: solid;
+        border-radius: 5px;
+        border-color white;
+        outline: none; 
+        background: black;
+        color: white;
+        cursor: pointer;
+    }
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: black;
+        overflow-x: hidden;
+        transition: 1s;
+        padding-top: 0px;
+}
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+}
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+}
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+}
+    .white {
+        color: white;
+        font-size: 20px;
+    }
+    .white2 {
+        color: white;
+        font-size: 15px;
+    }
+    .modal {
+        display: none;
+        position: fixed; 
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: black;
+        background-color: rgba(0,0,0,0.4);
+}
+
+
+    .modal-content {
+        background-color: black;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        height: 50%;
+        color: white;
+        font-family: sen;
+}
+    .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        float: right;
+}
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+}
+    .sen {
+        font-family: Sen;
+    }
+</style>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "25%";
+}
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0px";
+}
+function openModal() {
+    var modal = document.getElementById("modal");
+    
+    modal.style.display = "block";
+}
+function closeModal() {
+    var modal = document.getElementById("modal");
+    
+    modal.style.display = "none";
+}
+</script>
+<body>
+    <header id="navbar">
+        <h1 class="logo" style="font-family: Sen">My Overwatch Mains (Throughout the years)</h1>
+            <nav>
+                <ul class="links">
+                    <li><a href="javascript:void(0)" onclick="openModal()">Damage</a></li>
+                    <li><a href="javascript:void(0)" onclick="openModal()">Abilities</a></li>
+                    <li><a href="javascript:void(0)" onclick="openModal()">Ults</a></li>
+                    <li><a href="javascript:void(0)" onclick="openNav()">Mains</a></li>
+                </ul>
+            </nav>
+    </header>
+
+<div id="mySidenav" class="sidenav">
+    <button type="button" class="button" onclick="closeNav()">Close</button>
+    <center><br><br><br><h1 style="color: white">A brief view of my Mains</h1>
+    <br><b><p class="white">Widowmaker<p></b>
+    <p class="white2">300 damage to head 120 to body in fully charged sniper mode.</p><br>
+    <p class="white"><b>Sombra</b></p>
+    <p class="white2">2.4-8 damage a second if you're landing all hits.</p>
+    <br><p class="white"><b>Gengi</b></p>
+    <p class="white2">28 damage per body hit.</p><br>
+    <p class="white"><b>McCree</b></p>
+    <p class="white2">70 damage up close.</p><br>
+    <p class="white"><b>Soldier 76</b></p>
+    <p class="white2">10-19 damage. 30 damage headshots.</p><br>
+    <p class="white"><b>Pharah</b></p>
+    <p class="white2">120 damage on direct hit, 65 with splash damage.</p><br>
+    <p class="white"><b>Junkrat</b></p>
+    <p class="white2">120 damage on direct hit, 80 with splash damage.</p><br>
+    
+    
+    </center>
+</div>
+    <!-- On the page. -->
+        <!-- Widow -->
+    <center><h1 class="zindex Sen" style="font-family: Sen"><br>Main #1:<br>Widowmaker.</h1></center>
+    <br><center><img src="https://i.ya-webdesign.com/images/widowmaker-symbol-png-7.png" width="120"></center>
+    <br><p><center style="font-family: Sen">Widowmaker is a sniper that deals high damage to any character. She is powerful in many ways and can one-shot a dps character winning a team fight or influencing it greatly.</center></p>
+    <br><h2 style="font-family: Sen"><center>Damage.</center></h2>
+    <p><center style="font-family: Sen">Widowmaker, or "Widow", is a DPS sniper so you cna expect her to do ALOT of damage. One thing to understand about Widow is that her sniper charges up to make a shot. At 0% percent charge a shot to the body is 12 damage. 0% to the head is 120 damage. But, when her sniper is fully charged she does 150% more damage. That means that to the body she does 30 damage, to the head it does 300 damage. Now that's ALOT.</center></p>
+    <h2><center>Abilities.</center></h2>
+    <p><center>Widowmaker has two abilities. Her abilities can be used as transportation, defense, and as a good way to lay a trap. Her first ability is called "Grapple". In this ability, she throws a grapple and hooks onto the nearest ledge. Cooldown is 12 seconds. In her next ability "Venom Mine". Widowmaker </center></p>
+    
+    <br><hr>
+    
+    <!-- Inside the Modal. -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+    <button id="btn" type="button" onclick="closeModal()" style="background: black; color: red; border: none; font-family: sen; font-size: 25px; outline: none; cursor: pointer;">Close</button>
+    <h1><center>Damage.</center></h1>
+    <p>Damage refers to the amout of damage the weopon of the character does. For example Widowmakers gun can take out any DPS character with one fully charged sniper head shot. (Execpt fully charged Doomfist.)
+    </p>
+    <h1><center>Abilities.</center></h1>
+    <p>Abilities are a characters moves that are not the main source of damage. Abilities are used to combo with others and your own weopon. They all have cooldown times depending on how good they are.</p>
+    <h1><center>Ults.</center></h1>
+    <p>The word "Ult" refers to Ultimate. It is the characters strongest move but has the longest time till you can use it. This move can be charged passivly or in combat. Damage differs and some Ults help your own team rather than do damage.</p>
+  </div>
+        
+    </div>
+</body>

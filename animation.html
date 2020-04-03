@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<style>
+    body {
+        background-color: #FEE140;
+background-image: linear-gradient(45deg, #FEE140 0%, #FA709A 100%);
+
+    }
+    .box {
+        background: white;
+        height: 200px;
+        width: 200px;
+        position: relative;
+        margin: auto;
+        top: 200px;
+        transition-duration: 2s;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .button {
+        background-color: lightskyblue;
+        border: none;
+        color: black;
+        padding: 10px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 4px 2px;
+        cursor: pointer;  
+    }
+    .border {
+        border-color: lightskyblue;
+        border-width: 10px;
+        border-style: solid;
+        border-radius: 15px;
+    }
+</style>
+<script>
+function fadeOut() {
+    const box = document.getElementById("box1");
+    
+    box.style.backgroundColor = "lightskyblue"
+    box.style.borderRadius = "100%"
+    box.style.width = "200px"
+    box.style.height = "200px"
+}
+function fadeIn() {
+    const box = document.getElementById("box1");
+    
+    box.style.backgroundColor = "White"
+    box.style.borderRadius = "0%"
+    box.style.width = "200px"
+    box.style.height = "200px"
+}
+function tri() {
+    const box = document.getElementById("box1");
+    
+    box.style.backgroundColor = "lightskyblue"
+    box.style.borderRadius = "50% 50% 0% 0%"
+    box.style.width = "200px"
+    box.style.height = "200px"
+}
+function bottom() {
+    const box = document.getElementById("box1");
+    
+    box.style.backgroundColor = "lightskyblue"
+    box.style.borderRadius = "0% 0% 50% 50%"
+    box.style.width = "200px"
+    box.style.height = "200px"
+}
+function chat() {
+    const box = document.getElementById("box1");
+    
+    box.style.backgroundColor = "lightskyblue"
+    box.style.borderRadius = "50% 50% 50% 0%"
+    box.style.width = "250px"
+    box.style.height = "200"
+}
+function play() {
+    const box = document.getElementById("box1");
+    
+    box.style.backgroundColor = "lightskyblue"
+    box.style.width = "90%"
+    box.style.borderRadius = "0% 100% 100% 0%"
+}
+function border() {
+    const box = document.getElementById("box1");
+    
+    box.style.backgroundColor = "White"
+    box.style.borderRadius = "0%"
+    box.style.width = "200px"
+    box.style.height = "200px"
+    box.style.borderWidth = "5px"
+    box.style.borderStyle = "solid"
+    box.style.borderColor = "red"
+}
+function borderoff() {
+    const box = document.getElementById("box1");
+    
+    box.style.backgroundColor = "White"
+    box.style.borderRadius = "0%"
+    box.style.width = "200px"
+    box.style.height = "200px"
+    box.style.border = "none"
+}
+</script>
+<body>
+<!-- standard header here -->
+<a href="/" class="border button">Home</a><br>
+<!-- standard header here -->
+    <div id="box1" class="box"></div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <center><button type="button" class="border button" onClick="fadeIn()">Square</button>
+    <button type="button" class="border button" onclick="fadeOut()">Circle</button>
+    <button type="button" class="border button" onClick="tri()">Rounded Top</button>
+    <button type="button" class="border button" onClick="bottom()">Rounded Bottom</button>
+    <button type="button" class="border button" onClick="chat()">Chat Bubble</button>
+    <button type="button" class="border button" onClick="play()">Funky Wave</button></center><br>
+    <center><button type="button" class="border button" onClick="border()">Border On</button>
+    <button type="button" class="border button" onClick="borderoff()">Border Off</button></center>
+</body>
