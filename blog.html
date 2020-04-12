@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital@1&display=swap" rel="stylesheet">
+<style>
+    body {
+        background-image: url("https://cdnb.artstation.com/p/assets/images/images/020/053/063/large/simon-fuchs-havana-07.jpg?1566167951");
+        opacity: 1;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .archive {
+       border-width: 5px;
+       border-color: #007bff;
+       border-style: solid;
+       border-radius: 15%;
+       background: #007bff;
+       padding: 10px;
+       outline: none;
+       cursor: pointer;
+       box-shadow: 1px 1px;
+    }
+    .padding {
+        padding-top: 10px;
+        padding-right: 10px;
+    }
+    .padding2 {
+        padding-left: 58%;
+        padding-bottom: 0px;
+    }
+    #post {
+        width: 785px;
+        height: 400px;
+        background: black;
+        opacity: .8;
+        border-style: solid;
+        border-width: 5px;
+        border-color: black;
+        border-radius: 20px;
+        
+    }
+    #myMain {
+        width: 500px;
+        height: 570px;
+        float: left;
+        background: #333133;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #333133;
+        border-radius: 20px;
+        padding-bottom: 0px;
+    }
+    .img {
+        border-width: 5px;
+        border-style: solid;
+        border-color: #333133;
+        border-radius: 20px;
+    }
+    .paddingl {
+        padding-left: 20px;
+        padding-bottom: 10px;
+    }
+    .background {
+        background: #333133;
+        opacity: .8;
+    }
+    .paddingtop {
+        padding-top: 0px;
+    }
+    .paddingb {
+        padding-bottom: 0px;
+    }
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-image: url("https://vignette.wikia.nocookie.net/overwatch/images/2/28/Hanamura_screenshot_13.png/revision/latest?cb=20160626221320");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        overflow-x: hidden;
+        transition: 1s;
+        padding-top: 0px;
+}
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+}
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+}
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+}
+.button {
+        float: left;
+        width: 80px;
+        height: 50px;
+        border-width: 0px;
+        border-style: solid;
+        border-radius: 20px;
+        border-color white;
+        outline: none; 
+        color: white;
+        cursor: pointer;
+        background: black;
+        
+    }
+</style>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+}
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0px";
+}
+</script>
+<body>
+</div>
+    <div class="padding">
+        <button onclick="openNav()" class="archive" style="width: 150px; height: 100px; float: right; font-family: sen; font-size: 25px;" type="button">
+            <center>Current Main</center></button>
+    </div>
+    <h1 style="padding-top: 5px; padding-left: 5px; font-family: Inria Sans; font-size: 80px; color: #eda63b;">Overwatch Blog</h1>
+    <p class="blur" style="font-family: sen; padding-left: 50px; color: black;">Where you can read what I have to say!</p>
+    <br><div class="paddingl">
+    <center><div id="post">
+            <h1 style="color: white; font-family: sen; opacity: 1; font-size: 45px">Overwatch 2's details?</h1>
+            <h4 style="color: white; font-family: sen; font-size: 25px; padding-left: 10px;">Tuesday, April 7th, 2020</h4>
+            <br><p style="color: white; font-family: sen; font-size: 18px; padding-left: 10px;">Here's the thing about Overwatch 2, it's still in development. That's the main point about it. If they are still working on the game, it probably won't come out for at least a year. At the last Blizzcon Jeff Kaplan, Vice-President of Blizzard, said "We will probably still be talking about Overwtach 2 at the next Blizzcon. So, we probably have some time to wait. Also, on the topic of time, becuase Blizzard would never want to take your pride away, they will make it so you can transfer levels, skin, sprays, and emotes. Blizzard also said that it will be primarily Story kind of mode like the Archives event, and alot of PvE. Along with that they still have all the gamemodes and are adding a new one. Push! Basically a zone war. There are gameplay videos on that so check those out! Overwatch 1 players and Overwatch 2 players WILL be able to play together. Blizzard said that Overwatch 1 will get all the heros that Overwatch 2 gets. I think for the time being, were fine with Overwatch 1.</p>
+    </div>
+    </div>
+    </center>
+    <!-- <div class="padding2">
+            <div id="myMain">
+                <center><h1 style="font-family: sen;">Current Main:</h1></center>
+                <img src="https://vignette.wikia.nocookie.net/cosref/images/4/4d/Mercy.png/revision/latest?cb=20170220153923" style="width: 350px; padding-top: 0px; padding-left: 80px">
+            </div>
+        </div> -->
+    <div id="mySidenav" class="sidenav">
+    <button type="button" class="button" onclick="closeNav()">Close</button>
+    <img style="width: 450px; float: left;" src="https://vignette.wikia.nocookie.net/cosref/images/4/4d/Mercy.png/revision/latest?cb=20170220153923">
+    <h1 style="float: right; font-family: sen; color: #ecf542; padding-top: 250px; padding-right: 450px; font-size: 75px;"><center>Current Main:<br>Mercy</center></h1>
+    </center>
+    </div>
+    <center><div class="paddingl">
+        <div id="post">
+            <h1 style="color: white; font-family: sen; opacity: 1; font-size: 45px">Echo to Xbox!</h1>
+            <h4 style="color: white; font-family: sen; font-size: 25px; padding-left: 10px; Opacity: 1;">Friday, April 10th, 2020</h4>
+            <br><p style="color: white; font-family: sen; font-size: 18px; padding-left: 10px;">Echo has a release date for ALL platforms! April 14, 2020! It won't be in Comp yet, but it will be in Quick Play, Arcade, and Workshop. Echo has recived MANY nerfs, but is ready to come from the PTR! That's kinda it, as a Console player, I'm exited.</p>
+        </div>
+    </div></center>
+    
+    
+    <center><div class="paddingtop">
+        <div class="paddingl">
+            <div id="post">
+                <h1 style="color: white; font-family: sen; opacity: 1; font-size: 45px">Mercy Nerfs make no sense.</h1>
+                <h4 style="color: white; font-family: sen; font-size: 25px; padding-left: 10px; Opacity: 1;">Sunday, April 12th, 2020</h4>
+                <br><p style="color: white; font-family: sen; font-size: 18px; padding-left: 10px;">My first question is WHY? I didn't start playing Mercy until most of the nerfs were already done. But I saw some gameplay of her BEFORE the nerfs. It looked like the perfect kit to play with. The one that had rez and flight as the abilities and when you activate your ult you get your rez faster and a free rez too. I don't know why Blizzard made these nerfs a thing but I think I have an idea. If you get too many revives you can basically restart a team battle, but maybe give it a bigger cooldown during Valkeryie but still give the free rez. I think she has a potential to be one of the best healers though she does not have as much battle potential as some of the other characters such as Moira and Lucio. But even with the nerfs, I still have lots of fun playing her and healing my team and being very much appriciated.</p>
+            </div>
+        </div>
+    </div></center>
+        <center><div class="paddingtop">
+        <div class="paddingl">
+            <div id="post">
+                <h1 style="color: white; font-family: sen; opacity: 1; font-size: 45px">Mercy Nerfs make no sense.</h1>
+                <h4 style="color: white; font-family: sen; font-size: 25px; padding-left: 10px; Opacity: 1;">Sunday, April 12th, 2020</h4>
+                <br><p style="color: white; font-family: sen; font-size: 18px; padding-left: 10px;">My first question is WHY? I didn't start playing Mercy until most of the nerfs were already done. But I saw some gameplay of her BEFORE the nerfs. It looked like the perfect kit to play with. The one that had rez and flight as the abilities and when you activate your ult you get your rez faster and a free rez too. I don't know why Blizzard made these nerfs a thing but I think I have an idea. If you get too many revives you can basically restart a team battle, but maybe give it a bigger cooldown during Valkeryie but still give the free rez. I think she has a potential to be one of the best healers though she does not have as much battle potential as some of the other characters such as Moira and Lucio. But even with the nerfs, I still have lots of fun playing her and healing my team and being very much appriciated.</p>
+            </div>
+        </div>
+    </div></center>
+</body>
